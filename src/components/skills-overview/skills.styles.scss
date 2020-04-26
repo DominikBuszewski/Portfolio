@@ -1,0 +1,57 @@
+$colors: (
+  primary: #2f89fc,
+  primary-light: #75b1ff,
+  light: #f5f5f5,
+  dark: #40514e,
+  secondary: #30e3ca,
+);
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+.technologies {
+  width: 100vw;
+  clip-path: polygon(0 10%, 100% 4%, 100% 100%, 0% 100%);
+  background-color: color(light);
+  min-height: 80vh;
+
+  .technologies-list {
+    padding: 40px;
+  }
+  h2 {
+    margin-top: 10vh;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .technologies-container {
+    @include desktop {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    p {
+      background-color: color(secondary);
+      color: color(light);
+      margin: 3px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1em;
+      letter-spacing: 0.1em;
+
+      @include desktop {
+        width: 30vw;
+      }
+    }
+  }
+}

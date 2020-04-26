@@ -1,0 +1,21 @@
+$colors: (
+  primary: #2f89fc,
+  light: #f5f5f5,
+  dark: #40514e,
+  secondary: #30e3ca,
+);
+
+.custom-button {
+  background-color: map-get($colors, secondary);
+  border: none;
+  width: 120px;
+  height: 40px;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 10px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: map-get($colors, light);
+  }
+}

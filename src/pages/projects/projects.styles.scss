@@ -1,0 +1,37 @@
+$colors: (
+  primary: #2f89fc,
+  primary-light: #75b1ff,
+  light: #f5f5f5,
+  dark: #40514e,
+  secondary: #30e3ca,
+);
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+.projects {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+    margin-top: 150px;
+
+    @include desktop {
+      font-size: 2em;
+    }
+  }
+}
