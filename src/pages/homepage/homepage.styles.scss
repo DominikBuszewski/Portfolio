@@ -1,56 +1,55 @@
 $colors: (
-  primary: #2f89fc,
-  primary-light: #75b1ff,
-  light: #f5f5f5,
-  dark: #40514e,
-  secondary: #30e3ca,
+	primary: #2f89fc,
+	primary-light: #75b1ff,
+	light: #f5f5f5,
+	dark: #40514e,
+	secondary: #30e3ca,
 );
 
 @function color($color-name) {
-  @return map-get($colors, $color-name);
+	@return map-get($colors, $color-name);
 }
 
 $desktop: 840px;
 @mixin desktop {
-  @media (min-width: #{$desktop}) {
-    @content;
-  }
+	@media (min-width: #{$desktop}) {
+		@content;
+	}
 }
 
 .homepage {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  //   background-image: $background;
-  clip-path: polygon(100% 0, 100% 56%, 47% 100%, 0 100%, 0 0);
-  background-color: color(primary);
-  color: map-get($colors, light);
-  z-index: -1;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	//   background-image: $background;
+	clip-path: polygon(100% 0, 100% 56%, 47% 100%, 0 100%, 0 0);
+	background-color: color(primary);
+	color: map-get($colors, light);
+	// z-index: -1;
 
-  @include desktop {
-    clip-path: polygon(0 0, 90% 0, 55% 100%, 0% 100%);
-  }
-  //   position: absolute;
-  //   z-index: -1;
-  .hero {
-    h1 {
-      @include desktop {
-        font-size: 5em;
-      }
-    }
-    p {
-      text-align: center;
+	@include desktop {
+		clip-path: polygon(0 0, 90% 0, 55% 100%, 0% 100%);
+	}
 
-      @include desktop {
-        font-size: 2.5em;
-      }
-    }
-  }
-  .buttons {
-    margin: 20px;
-    display: flex;
-  }
+	.hero {
+		h1 {
+			@include desktop {
+				font-size: 5em;
+			}
+		}
+		p {
+			text-align: center;
+
+			@include desktop {
+				font-size: 2.5em;
+			}
+		}
+	}
+	.buttons {
+		margin: 20px;
+		display: flex;
+	}
 }
