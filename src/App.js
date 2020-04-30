@@ -10,23 +10,13 @@ import ContactPage from "./pages/contact/contact.component";
 import Menu from "./components/menu/menu.component";
 
 class App extends React.Component {
-	state = {
-		menuOpen: false,
-	};
-
-	menuToggleClickHandler = () => {
-		this.setState((prevState) => {
-			return { menuOpen: !prevState.menuOpen };
-		});
-	};
-
 	render() {
 		return (
 			<div className="App">
-				<Header showMenuHandler={this.menuToggleClickHandler} />
-				<Menu show={this.state.menuOpen} />
+				<Header />
+				<Menu />
 				<HomePage />
-				<About id="about" />
+				<About />
 				<Projects />
 				<ContactPage />
 			</div>

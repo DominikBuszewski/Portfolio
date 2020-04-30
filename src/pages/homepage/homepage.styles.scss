@@ -37,7 +37,7 @@ $desktop: 840px;
 	.hero {
 		h1 {
 			@include desktop {
-				font-size: 5em;
+				font-size: 4em;
 			}
 		}
 		p {

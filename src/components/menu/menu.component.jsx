@@ -1,5 +1,6 @@
 import React from "react";
 import "./menu.styles.scss";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Menu = ({ show }) => {
 	let menuClasses = "hamburger-menu";
@@ -13,7 +14,7 @@ const Menu = ({ show }) => {
 			<div className="menu-links">
 				<nav>
 					<ul>
-						<li>
+						<li className="link">
 							<a href="">HOME</a>
 						</li>
 						<li>
@@ -22,9 +23,16 @@ const Menu = ({ show }) => {
 						<li>
 							<a href="">PROJECTS</a>
 						</li>
-						<li>
-							<a href="">CONTACT</a>
-						</li>
+						<Link
+							activeClass="active"
+							to="contact"
+							spy={true}
+							smooth={true}
+							offset={-70}
+							duration={500}
+						>
+							CONTACT
+						</Link>
 					</ul>
 				</nav>
 			</div>

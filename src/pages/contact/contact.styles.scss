@@ -1,56 +1,66 @@
 $colors: (
-  primary: #2f89fc,
-  primary-light: #75b1ff,
-  light: #f5f5f5,
-  dark: #40514e,
-  secondary: #30e3ca,
+	primary: #2f89fc,
+	primary-light: #75b1ff,
+	light: #f5f5f5,
+	dark: #40514e,
+	secondary: #30e3ca,
 );
 
 @function color($color-name) {
-  @return map-get($colors, $color-name);
+	@return map-get($colors, $color-name);
 }
 
 $desktop: 840px;
 @mixin desktop {
-  @media (min-width: #{$desktop}) {
-    @content;
-  }
+	@media (min-width: #{$desktop}) {
+		@content;
+	}
 }
 
 .conntact-page {
-  min-height: 60vh;
-  width: 100%;
-  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 59%);
-  background-color: color(primary);
-  //   position: absolute;
-  //   z-index: -1;
-  //   bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	min-height: 80vh;
+	width: 100%;
+	clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 59%);
+	background-color: color(primary);
+	//   position: absolute;
+	//   z-index: -1;
+	//   bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-  @include desktop {
-    clip-path: polygon(42% 0, 100% 0%, 100% 100%, 8% 100%);
-  }
+	@include desktop {
+		clip-path: polygon(42% 0, 100% 0%, 100% 100%, 8% 100%);
+	}
 
-  h1 {
-    font-size: 2em;
-  }
-  h3 {
-    color: color(light);
-    padding: 15px;
-  }
+	h1 {
+		font-size: 2em;
+		margin-bottom: 100px;
+	}
+	h3 {
+		color: color(light);
+		padding: 15px;
+	}
 
-  p {
-    color: color(secondary);
-  }
+	p {
+		color: color(secondary);
+	}
 
-  .contact-icon {
-    width: 40px;
-    height: 40px;
-    :hover {
-      cursor: pointer;
-    }
-  }
+	.social-media {
+		width: 200px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.icon-container {
+			&:hover {
+				cursor: pointer;
+				transform: scale(1.2);
+			}
+			.contact-icon {
+				width: 60px;
+				height: 60px;
+			}
+		}
+	}
 }
