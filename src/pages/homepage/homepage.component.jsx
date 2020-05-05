@@ -7,8 +7,8 @@ import CustomButton from "../../components/custom-button/custom-button.component
 const HomePage = () => (
 	<div className="homepage" id="home">
 		<div className="hero">
-			<h1>Dominik Buszewski</h1>
-			<p>Junior Front-end Developer.</p>
+			<h1 className="tracking-in-contract-bck">Dominik Buszewski</h1>
+			<p className="tracking-in-contract-bck">Junior Front-end Developer.</p>
 		</div>
 		<div className="buttons">
 			<Link
