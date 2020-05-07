@@ -1,9 +1,12 @@
 import React from "react";
 import "./header.styles.scss";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
+import logo from "../../assets/icons/logo.png";
 
 const Header = () => (
 	<header className="header">
+		<img src={logo} className="logo" />
+
 		<nav className="nav-container">
 			<Link
 				className="nav-element"

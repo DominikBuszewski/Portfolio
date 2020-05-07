@@ -3,7 +3,7 @@ import "./about.styles.scss";
 import SoftSkillsOverview from "../../components/soft-skills-overview/soft-skills-overview.component";
 import CustomButton from "../../components/custom-button/custom-button.component";
 import SkillsOverview from "../../components/skills-overview/skills.component";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 const About = () => (
 	<main className="about-me" id="about">
@@ -11,10 +11,11 @@ const About = () => (
 		<div className="skills">
 			<div className="informations">
 				<p>
-					Hi! My name is Dominik, I'm 28 years old, currently looking for my
-					first job as a web developer or any kind of internships which will
-					help me improve my skills. If you're interested in hiring me, don't
-					hesitate and contact me now!
+					Hi! My name is Dominik, I'm 28 years old guy, currently living in
+					Wrocław, working on my JS/React skills and looking for a job as a
+					front end developer. I am also open to internships which will help me
+					gain some experience and improve my programming skills. If you're
+					interested in hiring me, don't hesitate and contact me now!
 				</p>
 				<Link
 					activeClass="active"

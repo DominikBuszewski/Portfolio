@@ -8,7 +8,7 @@ const HomePage = () => (
 	<div className="homepage" id="home">
 		<div className="hero">
 			<h1 className="tracking-in-contract-bck">Dominik Buszewski</h1>
-			<p className="tracking-in-contract-bck">Junior Front-end Developer.</p>
+			<p className="tracking-in-contract-bck">Front-end Developer.</p>
 		</div>
 		<div className="buttons">
 			<Link
@@ -29,8 +29,21 @@ const HomePage = () => (
 				offset={-70}
 				duration={800}
 			>
-				<CustomButton name={"Contact me"} />
+				<CustomButton name={"Contact"} />
 			</Link>
+		</div>
+		<div className="animated-box">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
 		</div>
 	</div>
 );

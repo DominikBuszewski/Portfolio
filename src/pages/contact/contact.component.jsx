@@ -10,7 +10,7 @@ const ContactPage = () => (
 		<h1>CONTACT</h1>
 		<h3>Write to my on my email</h3>
 		<p>buszewski91@gmail.com</p>
-		<h3>Or find me on my social media</h3>
+		<h3>or find me on my social media</h3>
 		<div className="social-media">
 			<div className="icon-container">
 				<a

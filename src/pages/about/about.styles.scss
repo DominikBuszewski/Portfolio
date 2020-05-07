@@ -39,8 +39,12 @@ $desktop: 840px;
 		}
 
 		p {
-			width: 40%;
+			width: 60%;
 			text-align: justify;
+
+			@include desktop {
+				width: 40%;
+			}
 
 			@include desktop {
 				margin: 30px;

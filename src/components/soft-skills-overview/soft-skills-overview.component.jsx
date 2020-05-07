@@ -10,7 +10,7 @@ const SoftSkillsOverview = () => (
 	<div className="overview">
 		<div className="soft-skills">
 			<h2>Soft skills</h2>
-			<div className="soft-skills-list">
+			<div className="soft-skills-list ">
 				<div className="soft-skills-container">
 					<div className="soft-skill">
 						<ResponsibleIcon className="icon" />

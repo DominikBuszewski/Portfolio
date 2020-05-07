@@ -1,33 +1,34 @@
 $colors: (
-  primary: #2f89fc,
-  primary-light: #75b1ff,
-  light: #f5f5f5,
-  dark: #40514e,
-  secondary: #30e3ca,
+	primary: #2f89fc,
+	primary-light: #75b1ff,
+	light: #f5f5f5,
+	dark: #40514e,
+	secondary: #30e3ca,
 );
 
 $desktop: 840px;
 
 @mixin desktop {
-  @media (min-width: #{$desktop}) {
-    @content;
-  }
+	@media (min-width: #{$desktop}) {
+		@content;
+	}
 }
 
 @function color($color-name) {
-  @return map-get($colors, $color-name);
+	@return map-get($colors, $color-name);
 }
 
 .projects-overview {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 30px;
-  gap: 25px;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 30px;
+	gap: 25px;
 
-  @include desktop {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
-    margin: auto 50px;
-  }
+	@include desktop {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 60%;
+		gap: 25px;
+		margin: auto 50px;
+	}
 }

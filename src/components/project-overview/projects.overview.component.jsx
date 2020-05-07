@@ -4,25 +4,35 @@ import ProjectItem from "../project-item/project-item.component";
 import test from "../../assets/images/bg-test.jpg";
 import bao from "../../assets/images/bao.JPG";
 import crown from "../../assets/images/crown.JPG";
+import faceDetector from "../../assets/images/faceDetector.JPG";
 
 const ProjectsOverview = () => (
 	<div className="projects-overview">
 		<ProjectItem
-			imgUrl={test}
+			imgUrl={crown}
 			title={"Crown-shop"}
 			technology={"HTML/CSS/REACT/REDUX/REACT-ROUTER"}
+			code={"https://github.com/DominikBuszewski/crown-clothing"}
 		/>
 		<ProjectItem
 			imgUrl={bao}
 			title={"Bao-burger"}
 			technology={"HTML/CSS/REACT/REDUX/REACT-ROUTER"}
+			code={"https://github.com/DominikBuszewski/bao-burger"}
 		/>
 		<ProjectItem
-			imgUrl={crown}
+			imgUrl={test}
 			title={"Portfolio"}
 			technology={"HTML/CSS/REACT/REACT-SCROLL"}
+			code={"https://github.com/DominikBuszewski/Portfolio"}
+		/>
+		<ProjectItem
+			imgUrl={faceDetector}
+			title={"Face Detector"}
+			technology={"HTML/CSS/REACT/HOOKS"}
+			code={"https://github.com/DominikBuszewski/face-detector"}
+			live={"https://face-detector-live.herokuapp.com"}
 		/>
 	</div>
 );
-
 export default ProjectsOverview;
