@@ -26,6 +26,9 @@ const ContactPage = () => (
 				</a>
 			</div>
 		</div>
+		<footer className="footer">
+			<p>© Dominik Buszewski, 2020.</p>
+		</footer>
 	</div>
 );
 

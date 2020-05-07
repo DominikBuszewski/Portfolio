@@ -10,12 +10,40 @@ const About = () => (
 		<h1>ABOUT ME</h1>
 		<div className="skills">
 			<div className="informations">
+				<table>
+					<tbody>
+						<tr>
+							<td>Name:</td>
+							<td>Dominik </td>
+						</tr>
+						<tr>
+							<td>Surname:</td>
+							<td>Buszewski</td>
+						</tr>
+						<tr>
+							<td>Age:</td>
+							<td>28</td>
+						</tr>
+						<tr>
+							<td>City:</td>
+							<td>Wrocław</td>
+						</tr>
+						<tr>
+							<td>Languages:</td>
+							<td>Polish, English</td>
+						</tr>
+						<tr>
+							<td>Education:</td>
+							<td>Engineering degree</td>
+						</tr>
+					</tbody>
+				</table>
+
 				<p>
-					Hi! My name is Dominik, I'm 28 years old guy, currently living in
-					Wrocław, working on my JS/React skills and looking for a job as a
-					front end developer. I am also open to internships which will help me
-					gain some experience and improve my programming skills. If you're
-					interested in hiring me, don't hesitate and contact me now!
+					Hello! if you want to know more aboue me or you are interested in
+					hiring me, do not hesitate and contact me now! I am also open to
+					internships which will help me gain some experience and improve my
+					programming skills.
 				</p>
 				<Link
 					activeClass="active"
