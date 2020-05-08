@@ -28,6 +28,10 @@ $desktop: 840px;
 
 	h1 {
 		margin-bottom: 20px;
+
+		@include desktop {
+			margin-bottom: 50px;
+		}
 	}
 
 	.informations {
