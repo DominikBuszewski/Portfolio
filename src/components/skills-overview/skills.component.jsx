@@ -14,6 +14,7 @@ const SkillsOverview = () => (
 				<p>REACT ROUTER</p>
 				<p>REDUX</p>
 				<p>REACT HOOKS</p>
+				<p>Context API</p>
 				<p>YARN</p>
 				<p>GIT</p>
 				<p>FIREBASE</p>
