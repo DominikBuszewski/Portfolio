@@ -13,7 +13,7 @@ const ProjectsOverview = () => (
 			title={"Crown-shop"}
 			technology={"HTML/CSS/REACT/REDUX/REACT-ROUTER"}
 			code={"https://github.com/DominikBuszewski/crown-clothing"}
-			live={"https://dominik-buszewski-portfolio.herokuapp.com/"}
+			live={"https://crownliveshop.herokuapp.com/"}
 		/>
 		<ProjectItem
 			imgUrl={bao}
@@ -27,6 +27,7 @@ const ProjectsOverview = () => (
 			title={"Portfolio"}
 			technology={"HTML/CSS/REACT/REACT-SCROLL"}
 			code={"https://github.com/DominikBuszewski/Portfolio"}
+			live={"https://dominik-buszewski-portfolio.herokuapp.com/"}
 		/>
 		<ProjectItem
 			imgUrl={faceDetector}
