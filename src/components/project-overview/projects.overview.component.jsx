@@ -13,6 +13,7 @@ const ProjectsOverview = () => (
 			title={"Crown-shop"}
 			technology={"HTML/CSS/REACT/REDUX/REACT-ROUTER"}
 			code={"https://github.com/DominikBuszewski/crown-clothing"}
+			live={"https://dominik-buszewski-portfolio.herokuapp.com/"}
 		/>
 		<ProjectItem
 			imgUrl={bao}
