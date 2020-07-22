@@ -11,20 +11,18 @@ $colors: (
 
 $border-size: 2px;
 
-// .custom-button {
-// background-color: map-get($colors, secondary);
-// border: none;
-// width: 120px;
-// height: 40px;
-// border-radius: 15px;
-// display: inline-block;
-// margin: 10px;
-// cursor: pointer;
-// position: relative;
+$desktop: 1040px;
+
+@mixin desktop {
+	@media (min-width: #{$desktop}) {
+		@content;
+	}
+}
 
 .btn {
 	background-color: color(secondary);
 	min-width: 120px;
+	min-height: 40px;
 	color: #222;
 	padding: 0.5em 1em;
 	border: none;
@@ -35,6 +33,14 @@ $border-size: 2px;
 	z-index: 2;
 
 	--border-size: 2px;
+
+	@include desktop {
+		min-width: 150px;
+		min-height: 60px;
+	}
+	// p {
+	// 	margin: 20px;
+	// }
 }
 
 .btn.btn-border-pop::before {

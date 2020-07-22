@@ -39,7 +39,7 @@ const About = () => (
 					</tbody>
 				</table>
 
-				<p>
+				<p className="text">
 					Hello! if you want to know more aboue me or you are interested in
 					hiring me, do not hesitate and contact me now! I am also open to
 					internships which will help me gain some experience and improve my
@@ -53,7 +53,7 @@ const About = () => (
 					offset={-70}
 					duration={800}
 				>
-					<CustomButton name="Hire me!" />
+					<CustomButton name={"Hire me"} />
 				</Link>
 			</div>
 			<SoftSkillsOverview />

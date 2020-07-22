@@ -10,7 +10,7 @@ $colors: (
 	@return map-get($colors, $color-name);
 }
 
-$desktop: 840px;
+$desktop: 1040px;
 @mixin desktop {
 	@media (min-width: #{$desktop}) {
 		@content;
@@ -40,15 +40,18 @@ $desktop: 840px;
 
 	.hero {
 		h1 {
+			font-size: 3em;
+			margin-left: 1em;
 			@include desktop {
-				font-size: 4em;
+				font-size: 6em;
 			}
 		}
 		p {
 			text-align: center;
+			font-size: 2em;
 
 			@include desktop {
-				font-size: 2.5em;
+				font-size: 4.5em;
 			}
 		}
 	}

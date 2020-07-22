@@ -5,6 +5,7 @@ import test from "../../assets/images/bg-test.jpg";
 import bao from "../../assets/images/bao.JPG";
 import crown from "../../assets/images/crown.JPG";
 import faceDetector from "../../assets/images/faceDetector.JPG";
+import parfum from "../../assets/images/asd.JPG";
 
 const ProjectsOverview = () => (
 	<div className="projects-overview">
@@ -35,6 +36,13 @@ const ProjectsOverview = () => (
 			technology={"HTML/CSS/REACT/HOOKS"}
 			code={"https://github.com/DominikBuszewski/face-detector"}
 			live={"https://face-detector-live.herokuapp.com"}
+		/>
+		<ProjectItem
+			imgUrl={parfum}
+			title={"Parfum"}
+			technology={"HTML/Styled components/REACT/REACT HOOKS/REACT ROUTER"}
+			code={"https://github.com/DominikBuszewski/Parfum"}
+			live={"https://parfum-shop.herokuapp.com/"}
 		/>
 	</div>
 );

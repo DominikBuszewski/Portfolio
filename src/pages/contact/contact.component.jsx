@@ -10,7 +10,7 @@ const ContactPage = () => (
 		<h1>CONTACT</h1>
 
 		<div className="social-media">
-			<p>Email: buszewski91@gmail.com</p>
+			<p>Email: dominik.buszewski@gmail.com</p>
 
 			<div className="icon-container">
 				<a

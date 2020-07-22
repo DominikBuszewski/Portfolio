@@ -3,8 +3,7 @@ import "./custom-button.styles.scss";
 
 const CustomButton = ({ name, link }) => (
 	<button className="btn btn-border-pop">
-		{name.toUpperCase()}
-		<a href={link}></a>
+		<p href={link}> {name.toUpperCase()}</p>
 	</button>
 );
 
