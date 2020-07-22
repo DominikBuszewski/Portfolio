@@ -6,10 +6,17 @@ $colors: (
 	secondary: #30e3ca,
 );
 
-$desktop: 840px;
+$desktop: 1040px;
+$tablet: 650px;
 
 @mixin desktop {
 	@media (min-width: #{$desktop}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: #{$tablet}) {
 		@content;
 	}
 }
@@ -20,14 +27,12 @@ $desktop: 840px;
 
 .projects-overview {
 	display: grid;
-	// grid-template-columns: 1fr;
-	padding: 30px;
-	gap: 25px;
+	grid-template-columns: 1fr;
+	width: 98%;
+	gap: 1em;
 
 	@include desktop {
-		grid-template-columns: repear(min-max(200px, 400px));
-		max-width: 60%;
-		gap: 25px;
-		margin: auto 50px;
+		width: 60%;
+		margin: auto 1em;
 	}
 }

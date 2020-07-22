@@ -6,7 +6,7 @@ $colors: (
 	secondary: #30e3ca,
 );
 
-$desktop: 840px;
+$desktop: 1040px;
 
 @mixin desktop {
 	@media (min-width: #{$desktop}) {
@@ -23,7 +23,7 @@ $desktop: 840px;
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	// justify-content: center;
 	align-items: center;
 
 	h2 {
